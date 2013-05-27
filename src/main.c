@@ -104,11 +104,12 @@ handle_init( AppContextRef ctx)
 
 	// Add TIME
 	// GRect takes x,y,w,h
-	text_layer_init(&text_time, GRect(40,70,80,30));
+	text_layer_init(&text_time, GRect(30,70,80,30));
 	text_layer_set_font(&text_time, myfont);
 	text_layer_set_text(&text_time, "");
 	text_layer_set_background_color(&text_time, GColorClear);
 	text_layer_set_text_color(&text_time, GColorWhite);
+	text_layer_set_text_alignment(&text_time, GTextAlignmentCenter);
 	layer_add_child(&window.layer, &text_time.layer);
 	
 	/*********************** CODE FOR INCLUDING DATE ****************
