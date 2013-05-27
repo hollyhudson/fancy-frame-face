@@ -100,11 +100,11 @@ handle_init( AppContextRef ctx)
 	
 	// Tell it what font to use
 	myfont = fonts_load_custom_font(
-		resource_get_handle(RESOURCE_ID_FONT_QUMPELLKA_23));
+		resource_get_handle(RESOURCE_ID_FONT_QUMPELLKA_20));
 
 	// Add TIME
 	// GRect takes x,y,w,h
-	text_layer_init(&text_time, GRect(42,70,80,30));
+	text_layer_init(&text_time, GRect(40,70,80,30));
 	text_layer_set_font(&text_time, myfont);
 	text_layer_set_text(&text_time, "");
 	text_layer_set_background_color(&text_time, GColorClear);
